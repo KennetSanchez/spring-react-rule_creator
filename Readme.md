@@ -13,7 +13,7 @@
 
 
 + [JavaScript](https://www.javascript.com/) - Programming language used.
-+ [MySql](https://www.mysql.com/) - Database used.
++ [PostgreSQL](https://www.postgresql.org/) - Database used.
 + [Node.js](https://nodejs.org/es/) -  Cross-platform runtime environment used.
 + [Heroku](https://www.heroku.com/home) - Cloud computing services platform used for the backend.
 + [Github Pages](https://pages.github.com/) - Static site hosting service that takes the HTML, CSS and JavaScript files used for the frontend.
@@ -28,10 +28,10 @@
 
 ## <b> _Made by_ </b>
 
-+ [Santiago Arevalo Valencia ](https://github.com/santiagoarevalo "Santiago A.")
 + [Camilo González Velasco](https://github.com/camilogonzalez7424 "Camilo G.")
-+ [Samuel Hernandez Cifuentes](https://github.com/zacwastaken "Samuel H.")
 + [Jhorman G. Mera Escobar](https://github.com/JhormanMera "Jhorman M.")
++ [Santiago Arevalo Valencia ](https://github.com/santiagoarevalo "Santiago A.")
++ [Samuel Hernandez Cifuentes](https://github.com/zacwastaken "Samuel H.")
 + [Paula Andrea Trujillo Mejía](https://github.com/PaulaTrujillo27 "Paula T.")
 
 <br>
