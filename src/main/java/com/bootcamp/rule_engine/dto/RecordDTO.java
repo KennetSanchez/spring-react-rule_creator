@@ -1,6 +1,5 @@
 package com.bootcamp.rule_engine.dto;
 
-import jakarta.persistence.Id;
 import jakarta.persistence.PrePersist;
 import lombok.AllArgsConstructor;
 import lombok.Data;
