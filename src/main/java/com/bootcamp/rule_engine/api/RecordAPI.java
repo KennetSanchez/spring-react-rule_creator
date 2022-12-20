@@ -9,7 +9,7 @@ import java.util.UUID;
 
 @CrossOrigin(origins ="http://localhost:3000")
 @RequestMapping("/records")
-public interface RecordsAPI {
+public interface RecordAPI {
 
     @GetMapping("/{recordId}")
     RecordDTO getRecord(@PathVariable UUID recordId);
