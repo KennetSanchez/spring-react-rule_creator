@@ -44,6 +44,7 @@ public class LoginServiceImpl implements LoginService {
     private TokenDTO authenticatePassword(User user, LoginDTO loginDTO) {
         String expectedHash = user.getHashedPassword();
         String requestHash  = Hashing.sha256().hashString(loginDTO.getPassword(), StandardCharsets.UTF_8).toString();
+
         if (requestHash.equals(expectedHash)) {
             Map<String, String> claims = new HashMap<>();
             claims.put("userId", user.getId().toString());

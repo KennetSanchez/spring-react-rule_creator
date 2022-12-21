@@ -101,7 +101,6 @@ public class JWTAuthorizationTokenFilter extends OncePerRequestFilter {
         boolean authorized = true;
         String method = request.getMethod();
         String path = request.getRequestURI();
-        //Hashmap o if
 
         if (method.equals("GET") && path.startsWith("/users/") && !path.endsWith(SecurityContextHolder.getContext().getUserId().toString())) {
             response.setStatus(401);

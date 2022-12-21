@@ -27,7 +27,6 @@ public class User {
     @JoinColumn(name = "role_id")
     private Role role;
 
-
     private String firstName;
 
     private String lastName;
