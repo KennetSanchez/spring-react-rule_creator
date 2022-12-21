@@ -24,4 +24,26 @@ INSERT INTO ROLE_PERMISSION (role_id, permission_id) VALUES
     ('2e72ed53-f5e2-4f7a-bd86-8aadcadeb4eb', 'ccc7ff73-1989-413a-ab52-9bec7a049e31');
 
 INSERT INTO RECORDS (record_id, first_name, last_name, monthly_income, monthly_outcome, has_children, is_married)
-    VALUES ('00000000-0000-1111-0000-000000000000', 'Jhon', 'Doe', 300, 200, false, true)
+VALUES ('00000000-0000-1111-0000-000000000004', 'Juan', 'PradaGod', 350, 240, true, true);
+
+INSERT INTO RECORDS (record_id, first_name, last_name, monthly_income, monthly_outcome, has_children, is_married)
+    VALUES ('00000000-0000-1111-0000-000000000000', 'Jhorman', 'Mera', 300, 12900, true, false);
+
+INSERT INTO RECORDS (record_id, first_name, last_name, monthly_income, monthly_outcome, has_children, is_married)
+VALUES ('00000000-0000-1111-0000-000000000089', 'Camilo', 'Gonzalez', 3000, 200, false, true);
+
+INSERT INTO RECORDS (record_id, first_name, last_name, monthly_income, monthly_outcome, has_children, is_married)
+VALUES ('00000000-0000-1111-0000-000000000001', 'Santiago', 'Arevalo', 300, 200, false, true);
+
+INSERT INTO RECORDS (record_id, first_name, last_name, monthly_income, monthly_outcome, has_children, is_married)
+VALUES ('00000000-0000-1111-0000-000000000002', 'Samuel', 'Hernandez', 300, 200, false, true);
+
+INSERT INTO RECORDS (record_id, first_name, last_name, monthly_income, monthly_outcome, has_children, is_married)
+VALUES ('00000000-0000-1111-0000-000000000003', 'Kennet', 'Sanchez', 300, 200, false, true);
+
+
+INSERT INTO RECORDS (record_id, first_name, last_name, monthly_income, monthly_outcome, has_children, is_married)
+VALUES ('00000000-0000-1111-0000-000000000005', 'Jhon', 'Doe', 300, 212500, true, true);
+
+INSERT INTO RECORDS (record_id, first_name, last_name, monthly_income, monthly_outcome, has_children, is_married)
+VALUES ('00000000-0000-1111-0000-000000000006', 'Jhon', 'Doe', 12400, 200, false, true)
