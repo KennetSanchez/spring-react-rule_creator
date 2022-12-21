@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="33d4e9bc-7210-47c3-9617-c56ab7c0750d" author="perficient_bootcamp_t1" failOnError="true">
+
+        <createTable tableName="RECORDS">
+
+            <column name="record_id" type="UUID">
+                <constraints nullable="false" primaryKey="true" />
+            </column>
+
+            <column name="first_name" type="varchar(150)" >
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="last_name" type="varchar(150)" >
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="monthly_income" type="numeric" >
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="monthly_outcome" type="numeric" >
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="has_children" type="boolean" >
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="is_married" type="boolean" >
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+
+    </changeSet>
+
+</databaseChangeLog>
