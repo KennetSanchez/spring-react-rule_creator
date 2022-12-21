@@ -7,7 +7,7 @@ import javax.validation.Valid;
 import java.util.List;
 import java.util.UUID;
 
-@CrossOrigin(origins ="http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:3000, http://54.89.157.150:3000")
 @RequestMapping("/records")
 public interface RecordAPI {
 
