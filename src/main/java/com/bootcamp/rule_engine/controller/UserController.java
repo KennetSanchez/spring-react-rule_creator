@@ -23,7 +23,7 @@ public class UserController implements UserAPI {
     public final UserMapper userMapper;
 
     //String uuid for the default role (user)
-    private final UUID DEFAULT_ROLE = UUID.fromString("0e02ed53-f5e2-4f7a-bd86-8aadcadeb4eb");
+    private final UUID DEFAULT_ROLE = UUID.fromString("2e72ed53-f5e2-4f7a-bd86-8aadcadeb4eb");
 
     @Override
     public UserDTO getUser(UUID userId) {

@@ -1,5 +1,6 @@
 package com.bootcamp.rule_engine.dto;
 
+import com.bootcamp.rule_engine.model.Role;
 import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -40,5 +41,5 @@ public class UserDTO {
     @NotEmpty
     private String password;
 
-    private UUID userRolId;
+    private Role role;
 }

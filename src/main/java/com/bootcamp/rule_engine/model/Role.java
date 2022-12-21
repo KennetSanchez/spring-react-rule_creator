@@ -6,12 +6,13 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Type;
 
 import java.util.List;
 import java.util.UUID;
 
 @Data
-@Table(name = "user_role")
+@Table(name = "USER_ROLE")
 @Entity
 @Builder
 @NoArgsConstructor
@@ -36,5 +37,4 @@ public class Role {
             joinColumns = @JoinColumn(name = "role_id"),
             inverseJoinColumns = @JoinColumn(name = "permission_id"))
     private List<Permission> rolePermissions;
-
 }

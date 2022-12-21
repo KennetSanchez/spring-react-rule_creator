@@ -7,7 +7,7 @@ INSERT INTO USER_PERMISSION (permission_id, uri, permission_key, permission_meth
 DELETE FROM USERS WHERE id='00000000-0000-0000-0000-000000000000';
 
 INSERT INTO USER_ROLE (role_id, role_name, description) VALUES
-    ('2e72ed53-f5e2-4f7a-bd86-8aadcadeb4ea','ADMIN', 'Base role for admin');
+    ('2e72ed53-f5e2-4f7a-bd86-8aadcadeb4ea','ADMIN', 'Base role for administrators with the highest permissions');
 
 INSERT INTO ROLE_PERMISSION (role_id, permission_id) VALUES
     ('2e72ed53-f5e2-4f7a-bd86-8aadcadeb4ea', 'ccc7ff73-1989-413a-ab52-9bec7a049e31');
@@ -18,7 +18,7 @@ INSERT INTO USERS (id, role_id, email, first_name, last_name, hashed_password) V
 
 /*User*/
 INSERT INTO USER_ROLE (role_id, role_name, description) VALUES
-    ('2e72ed53-f5e2-4f7a-bd86-8aadcadeb4eb','USER', 'Base role for admin');
+    ('2e72ed53-f5e2-4f7a-bd86-8aadcadeb4eb','USER', 'Base role for users');
 
 INSERT INTO ROLE_PERMISSION (role_id, permission_id) VALUES
     ('2e72ed53-f5e2-4f7a-bd86-8aadcadeb4eb', 'ccc7ff73-1989-413a-ab52-9bec7a049e31');

@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 import java.util.UUID;
 
 @Data
-@Table(name = "user_permission")
+@Table(name = "USER_PERMISSION")
 @Entity
 @Builder
 @NoArgsConstructor

@@ -1,5 +1,7 @@
 package com.bootcamp.rule_engine.dto;
 
+import com.bootcamp.rule_engine.model.Role;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,6 +17,7 @@ import java.util.UUID;
 @NoArgsConstructor
 public class UserPublicDTO {
 
+    @Id
     private UUID userId;
 
     @NotNull
@@ -32,4 +35,5 @@ public class UserPublicDTO {
     @NotNull
     private String email;
 
+    private Role role;
 }
