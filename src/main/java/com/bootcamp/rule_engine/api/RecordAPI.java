@@ -14,9 +14,12 @@ public interface RecordAPI {
     @GetMapping("/{recordId}")
     RecordDTO getRecord(@PathVariable UUID recordId);
 
-    @PostMapping()
+    @PostMapping
     RecordDTO createRecord(@RequestBody @Valid RecordDTO recordDTO);
 
     @GetMapping
     List<RecordDTO> getRecords();
+
+    @GetMapping("/filterRecords")
+    List<RecordDTO> filterRecords();
 }
