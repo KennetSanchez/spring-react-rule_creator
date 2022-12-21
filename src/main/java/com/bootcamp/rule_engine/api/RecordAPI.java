@@ -21,5 +21,5 @@ public interface RecordAPI {
     List<RecordDTO> getRecords();
 
     @GetMapping("/filterRecords")
-    List<RecordDTO> filterRecords();
+    List<RecordDTO> filterRecords(@RequestParam String finalQuery);
 }

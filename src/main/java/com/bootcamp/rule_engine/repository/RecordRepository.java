@@ -10,6 +10,8 @@ import java.util.UUID;
 
 @Repository
 public interface RecordRepository extends CrudRepository<Record, UUID> {
-    @Query(value = "SELECT record FROM RECORDS WHERE record.:field :operation :condition ", nativeQuery = true)
-    List<Record> filterRecords(String field, String operation, String condition);
+
+    //The first statements are hard-coded in order to reduce the risk of executing malicious commands
+    @Query(value = "SELECT record FROM RECORDS WHERE :queryString", nativeQuery = true)
+    List<Record> filterRecords(String queryString);
 }

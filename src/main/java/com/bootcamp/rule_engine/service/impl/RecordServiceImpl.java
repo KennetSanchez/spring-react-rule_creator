@@ -32,8 +32,8 @@ public class RecordServiceImpl implements RecordService {
     }
 
     @Override
-    public List<Record> filterRecords(String field, String operation, String condition) {
-        return recordRepository.filterRecords(field, operation, condition);
+    public List<Record> filterRecords(String queryString) {
+        return recordRepository.filterRecords(queryString);
     }
 
     @Override
