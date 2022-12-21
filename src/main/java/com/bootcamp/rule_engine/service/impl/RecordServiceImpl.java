@@ -6,6 +6,7 @@ import com.bootcamp.rule_engine.service.RecordService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
@@ -39,5 +40,24 @@ public class RecordServiceImpl implements RecordService {
     @Override
     public List<Record> getRecords() {
         return StreamSupport.stream(recordRepository.findAll().spliterator(),false).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<String> getColumnsNames() {
+        List<String>  rawResponse = recordRepository.getColumnsNames();
+        List<String> response = new ArrayList<>();
+
+        String row;
+        String [] rowSliced;
+
+        int COLUMN_NAME_INDEX = 3;
+
+        for(int i = 0; i < rawResponse.size() ; i++){
+            row = rawResponse.get(i);
+            rowSliced = row.split(",");
+            row = rowSliced[COLUMN_NAME_INDEX];
+            response.add(row);
+        }
+        return response;
     }
 }

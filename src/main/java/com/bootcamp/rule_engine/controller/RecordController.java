@@ -37,4 +37,11 @@ public class RecordController implements RecordAPI {
     public List<RecordDTO> filterRecords(String finalQuery) {
         return recordService.filterRecords(finalQuery).stream().map(recordMapper::fromRecord).collect(Collectors.toList());
     }
+
+    @Override
+    public List<String> getColumnsNames() {
+        List<String> columns =  recordService.getColumnsNames();
+        return columns;
+    }
+
 }

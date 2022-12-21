@@ -22,4 +22,7 @@ public interface RecordAPI {
 
     @GetMapping("/filterRecords")
     List<RecordDTO> filterRecords(@RequestParam String finalQuery);
+
+    @GetMapping("/columns")
+    List<String> getColumnsNames();
 }

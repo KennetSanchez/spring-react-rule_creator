@@ -14,4 +14,7 @@ public interface RecordRepository extends CrudRepository<Record, UUID> {
     //The first statements are hard-coded in order to reduce the risk of executing malicious commands
     @Query(value = "SELECT record FROM RECORDS WHERE :queryString", nativeQuery = true)
     List<Record> filterRecords(String queryString);
+
+    @Query(value = "SELECT * FROM information_schema.columns  WHERE table_name   = 'RECORDS'", nativeQuery = true)
+    List<String> getColumnsNames();
 }

@@ -22,3 +22,6 @@ INSERT INTO USER_ROLE (role_id, role_name, description) VALUES
 
 INSERT INTO ROLE_PERMISSION (role_id, permission_id) VALUES
     ('2e72ed53-f5e2-4f7a-bd86-8aadcadeb4eb', 'ccc7ff73-1989-413a-ab52-9bec7a049e31');
+
+INSERT INTO RECORDS (record_id, first_name, last_name, monthly_income, monthly_outcome, has_children, is_married)
+    VALUES ('00000000-0000-1111-0000-000000000000', 'Jhon', 'Doe', 300, 200, false, true)

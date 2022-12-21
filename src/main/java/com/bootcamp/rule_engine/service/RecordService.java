@@ -17,4 +17,6 @@ public interface RecordService {
     List<Record> filterRecords(@RequestParam String queryString);
 
     List<Record> getRecords();
+
+    List<String> getColumnsNames();
 }
