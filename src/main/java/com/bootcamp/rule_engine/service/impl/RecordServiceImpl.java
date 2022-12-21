@@ -60,4 +60,23 @@ public class RecordServiceImpl implements RecordService {
         }
         return response;
     }
+
+    @Override
+    public List<String> getTypes() {
+        List<String>  rawResponse = recordRepository.getColumnsNames();
+        List<String> response = new ArrayList<>();
+
+        String row;
+        String [] rowSliced;
+
+        int COLUMN_NAME_INDEX = 7;
+
+        for(int i = 0; i < rawResponse.size() ; i++){
+            row = rawResponse.get(i);
+            rowSliced = row.split(",");
+            row = rowSliced[COLUMN_NAME_INDEX];
+            response.add(row);
+        }
+        return response;
+    }
 }

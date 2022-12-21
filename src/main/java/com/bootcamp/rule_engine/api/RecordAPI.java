@@ -25,4 +25,7 @@ public interface RecordAPI {
 
     @GetMapping("/columns")
     List<String> getColumnsNames();
+
+    @GetMapping("/types")
+    List<String> getTypes();
 }

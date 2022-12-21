@@ -19,4 +19,7 @@ public interface RecordService {
     List<Record> getRecords();
 
     List<String> getColumnsNames();
+
+    List<String> getTypes();
+
 }

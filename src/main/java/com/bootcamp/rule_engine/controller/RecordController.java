@@ -44,4 +44,10 @@ public class RecordController implements RecordAPI {
         return columns;
     }
 
+    @Override
+    public List<String> getTypes() {
+        List<String> columns =  recordService.getTypes();
+        return columns;
+    }
+
 }
